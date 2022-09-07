@@ -7,6 +7,8 @@ processing library for PHP 5.5+. This package implements Ameria support for Omni
 
 ## Installation
 
+    composer install sherbacov/omnipay-ameria
+
 Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply add it
 to your `composer.json` file:
 
@@ -24,7 +26,7 @@ And run composer to update your dependencies:
 
 Or you can simply run
 
-    composer require sarsam/omnipay-ameria
+    composer require sherbacov/omnipay-ameria
 
 ## Basic Usage
 
