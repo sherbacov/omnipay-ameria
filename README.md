@@ -13,7 +13,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "sarsam/omnipay-ameria": "dev-master"
+        "sherbacov/omnipay-ameria": "master"
     }
 }
 ```
