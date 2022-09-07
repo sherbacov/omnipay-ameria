@@ -1,5 +1,5 @@
 {
-  "name": "sarsam/omnipay-ameria",
+  "name": "sherbacov/omnipay-ameria",
   "type": "library",
   "description": "AmeriaBank gateway for Omnipay payment processing library",
   "keywords": [
@@ -7,16 +7,17 @@
     "merchant",
     "omnipay",
     "pay",
+    "vpos",
     "payment",
     "Ameria",
     "purchase"
   ],
-  "homepage": "https://github.com/sarsam/omnipay-ameria",
+  "homepage": "https://github.com/sherbacov/omnipay-ameria",
   "license": "MIT",
   "authors": [
     {
-      "name": "Samvel Sargsyan",
-      "email": "sarsamvel1993@gmail.com"
+      "name": "Dmitry Shcherbakov",
+      "email": "php-omnipay-ameria@sherbacov.com"
     }
   ],
   "autoload": {
