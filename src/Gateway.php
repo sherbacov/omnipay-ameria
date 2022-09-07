@@ -130,6 +130,51 @@ class Gateway extends AbstractGateway
         return $this->getParameter('bindingPayment');
     }
 
+    public function setDescription($value){
+        return $this->setParameter('description', $value);
+    }
+
+    public function setAmount($value){
+        return $this->setParameter('amount', $value);
+    }
+
+    public function setTransactionId($value){
+        return $this->setParameter('transactionId', $value);
+    }
+
+    public function setReturnUrl($value){
+        return $this->setParameter('returnUrl', $value);
+    }
+
+
+    public function getLanguage()
+    {
+        return $this->getParameter('language');
+    }
+
+    public function setLanguage($value){
+        return $this->setParameter('language', $value);
+    }
+
+    public function getPaymentId()
+    {
+        return $this->getParameter('paymentId');
+    }
+
+    public function setPaymentId($value){
+        return $this->setParameter('paymentId', $value);
+    }
+
+    public function getOpaque()
+    {
+        return $this->getParameter('opaque');
+    }
+
+    public function setOpaque($value){
+        return $this->setParameter('opaque', $value);
+    }
+
+
     /**
      * Create Purchase Request depends on payment type.
      *

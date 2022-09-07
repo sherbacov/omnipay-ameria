@@ -113,6 +113,10 @@ class Response extends AbstractResponse implements RedirectResponseInterface
         return null;
     }
 
+    public function getData(){
+        return $this->data;
+    }
+
     /**
      * Get the orderStatus.
      * @return integer|null

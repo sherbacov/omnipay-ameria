@@ -207,6 +207,30 @@ abstract class AbstractRequest extends CommonAbstractRequest
         return $this->getTestMode() ? $this->testCurrency : parent::getCurrency();
     }
 
+    public function getTestTransactionId(string $transactionId): string
+    {
+        //2798001-2799000
+        //test range 2798009
+
+        $newstring = substr($transactionId, -3);
+        $num = intval($newstring);
+
+
+        $testNum = sprintf('%03d', $num);
+        $transId = '2798' . $testNum;
+
+        return $transId;
+    }
+
+    public function getTransactionId(){
+
+        $num = parent::getTransactionId();
+
+        return $this->getTestMode() ? $this->getTestTransactionId($num) : $num;
+    }
+
+
+
     /**
      * Get endpoint url
      * @return mixed
